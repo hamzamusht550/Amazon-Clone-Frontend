@@ -1,0 +1,143 @@
+
+@media (max-width: 720px) {
+    
+/*     Header */
+    .nav-list-B{
+        overflow: scroll;
+    }
+    .nav-items-A, .nav-items-B {
+        font-size: inherit;
+        border: none;
+        padding: 1vh
+    }
+    #navCart {
+	   font-size: 90%;
+    }
+    
+    .nav-items-A:hover, .nav-items-B:hover{
+	   border: none;
+    }
+    
+    #navSearch {
+        margin: 0 1vh;
+        height: 6vh;
+    }
+    #searchDropdown {   
+        display: none;
+    }
+    #navSearchButton {   
+        border-radius: .8vh;
+        padding: 1.7vh 1.7vh;
+    }
+    
+/*     Main */
+    
+    .hero {
+        position: static;
+    }
+    .hero-space {
+        display: none;
+    }
+    .img-box img {
+        width: 600px;
+    }
+    @keyframes imgSlider {
+    
+    1%{
+        right:calc(0vw);
+    }
+    10%{
+        right:calc(0vw);
+    }
+    
+    12%{
+        right:calc(600*1px);
+    }
+    30%{
+        right:calc(600*1px);
+    }
+    
+    32%{
+        right:calc(600*2px);
+    }
+    50%{
+        right:calc(600*2px);
+    }
+    
+    52%{
+        right:calc(600*3px);
+    }
+    70%{
+        right:calc(600*3px);
+    }
+    
+    72%{
+        right:calc(600*4px);
+    }
+    90%{
+        right:calc(600*4px);
+    }
+    
+    92%{
+        right:calc(600*5px);
+    }
+    100%{
+        right:calc(600*5px);
+    }
+    
+}
+    .section-1 {
+        gap: 0;
+    }
+    .card {
+        width: 100vw;
+        box-shadow: none
+    }
+    .card-1-img {
+        height: auto;
+        height:27vh;
+    }
+
+    #card-2-img {
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 1060px) {
+    
+    #navSearchInput {
+        width: 233vw;
+    }
+    #navLocation, #navFlag , #navSignIn, #navRegistry, #navOrder {
+        order: 3;
+        display: none;
+    }
+
+    #navLogo {
+        order: 1;
+        margin: 0 1vh;
+    }
+    #navCart {
+        order: 2;
+        margin: 0 1vh;
+    }
+    #navCart i {
+        margin-top: 0;
+    }
+    #navSearch {
+        margin: 0 2vh 1vh;
+    }
+    
+    
+    .nav-list-A {
+        justify-content: space-between;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+    
+}
+

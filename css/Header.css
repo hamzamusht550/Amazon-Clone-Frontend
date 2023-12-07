@@ -1,0 +1,191 @@
+
+.nav-items-A:not(#navSearch), .nav-items-B, #searchDropdown, #navSearchButton{
+	cursor: pointer;
+}
+
+.nav-items-A:hover, .nav-items-B:hover{
+	border: solid .2vh white;
+}
+
+.nav-search:not(#navSearchInput):hover {
+/* 	border: none; */
+/* 	scale: 1; */
+/* 	cursor: default; */
+/* 	background: red; */
+}
+
+
+/* -------------------------------------------------- Navigation 1-------------------------------------------------------------- */
+
+.navBar {
+	display: flex;
+	flex-direction: column;
+}
+
+#navLogo {
+	order: 1;
+}
+#navLocation {
+	order: 2;
+}
+#navSearch {
+	order: 3;
+}
+#navFlag {
+	order: 4;
+}
+#navSignIn {
+	order: 5;
+}
+#navOrder {
+	order: 6;
+}
+#navCart {
+	order: 7;
+}
+
+/* -------------------------------------------------- Navigation 1-------------------------------------------------------------- */
+
+/* -------------------------------------------------- Navigation 1-------------------------------------------------------------- */
+
+.nav-list-A {
+    background: var(--first); /* Theme */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.4vh 0;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+}
+
+.nav-items-A{
+	border: solid .2vh var(--first);
+	padding: .7vh .6vh 3.5vh;
+	height: 6vh;
+	font-size: 1.7vh;
+	border-radius: .5vh;
+}
+
+.nav-items-A span{
+	font-size: 85%;
+}
+
+#navLogo a img {
+	width: 12vh;
+}
+
+#navFlag img {
+	width: 6.5vh;
+}
+
+#navSearch {
+	display: flex;
+	background: white; 
+	align-items: center;
+	border-radius: .5em;
+	overflow: hidden;
+	border: none;
+	padding: 0;
+	height: 5vh;
+}
+
+.nav-search {
+	/*! padding: 6% 0; */
+	font-size: inherit;
+	border: none;
+}
+
+/* Search */
+
+#searchDropdown {
+	border-right: solid 2px #0000003b;
+	color: #444;
+	font-size: 80%;
+	width: 0;
+	padding: 3em 3.2em 3em .5em;
+}
+
+/* Search-1 */
+
+#searchDropdown:focus {
+	background: none;
+}
+
+#searchDropdown:focus-within {
+	background: #dbdbdb;
+}
+
+/* Search-2 */
+
+#navSearchInput {
+    width: 42vw;
+    padding: 3em 0.5em;
+}
+
+/* Search-3 */
+
+#navSearchButton {
+	padding: 3em 0.7em;
+	background: var(--third); /* Theme */
+}
+
+#navSearchButton i {
+	font-size: 1.5em;
+}
+
+/* Flag */
+
+#navFlag {
+	display: flex;
+	flex-direction: column;
+	padding: 4px 4px 44px;
+}
+
+#navFlag p {
+font-size: 1.5vh;
+}
+
+#navCart i {
+	position: relative;
+	bottom: 1vh;
+	margin-top: 3.5vh;
+}
+
+#navCart pre {
+	display: inline-block;
+	text-align: center;
+}
+#navCart pre p {
+	color: var(--third); /* Theme */
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------- Navigation 2-------------------------------------------------------------- */
+
+
+.nav-list-B {
+	background: var(--second); /* Theme */
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 0.5vh .8vw;
+}
+
+.nav-items-B {
+    color: white;
+    border: solid .2vh var(--second);
+    padding: .32vw 1.2vh;
+    font-size: 1.7vh;
+    border-radius: .5vh;
+}
+
+#navAll {
+	display: flex;
+	font-size: 2.5vh;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
