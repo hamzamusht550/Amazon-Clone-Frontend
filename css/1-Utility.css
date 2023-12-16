@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src:  url('Ubuntu-Regular.ttf') format('truetype')
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-family: Arial, sans-serif;
+}
+
+/* background-images {
+	background-image: url("../media/img/logo.png");
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+* {
+	scroll-behavior: smooth;
+}
+body {
+	overflow-x: hidden;
+}
+.sections {
+	overflow-x: hidden;
+}
+
+/* Chrome, Safari */
+.card-scroll-1st-wrapper::-webkit-scrollbar {
+	display: none;
+}
+.card-scroll-1st-wrapper {
+/* 	firefox */
+	scrollbar-width: none;
+/* 	Edge, IE */
+	-ms-overflow-style: none;
+}

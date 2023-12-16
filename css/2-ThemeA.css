@@ -1,0 +1,20 @@
+:root{
+	/* 	Theme 2A */
+	--first: #212121;
+	--second: #313131;
+	--third: #fc9800;
+}
+
+.card-text {
+    text-decoration: auto;
+    color: black;
+    font-size: 1.6vh;
+}
+.card-description {
+    color: black;
+    font-size: 95%;
+}
+.card-description:hover {
+    color: #c60e0e;
+    text-decoration: underline;
+}
