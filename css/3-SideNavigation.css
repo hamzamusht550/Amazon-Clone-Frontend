@@ -1,0 +1,78 @@
+.sideNav {
+	display: flex;
+	position: absolute;
+	z-index: 1;
+	transition: .6s;
+	left: -100vw;
+}
+
+.sideNav-left {
+	position: relative;
+	background: white;
+	width: 80vw;
+	height: 100vh;
+	font-size: 3vh;
+}
+.left-1st {
+	background: #202f40;
+	color: white;
+	padding: 2vh;
+}
+.signin {
+	color: white;
+	float: right;
+}
+.signin i {
+	margin-left: 1vh;
+	font-size: 100%;
+}
+.browseAmazon {
+    line-height: 3.5vh;
+}
+
+.left-2nd {
+	background: white;
+}
+.left-2nd div {
+	padding: 2vh;
+}
+.left-2nd div * {
+	color: black;
+	margin: 1vh 0;
+}
+.left-2nd-trending a, .left-2nd-departments a {
+	font-size: 80%;
+}
+.left-2nd-home a i {
+	float: right;
+	margin: 0;
+}
+.left-2nd-trending {
+	border-bottom: .2vh solid #cacaca;
+	border-top: .2vh solid #cacaca;
+}
+.left-2nd-departments i {
+	font-size: 70%;
+	margin-left: 0.5vh;
+	color: #b7b7b7;
+}
+
+
+.sideNav-right {
+/* 	background: rgba(0,0,0, .7); */
+	width: 20vw;
+	height: 100vh;
+	transition: 1s;
+}
+.navClose-btn {
+	background: transparent;
+	margin-top: 8vw;
+	margin-left: 5vw;
+	border: none;
+}
+.navClose-btn i {
+	color: white;
+	font-size: 5vh;
+	cursor: pointer;
+}
+

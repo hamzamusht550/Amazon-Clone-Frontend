@@ -1,0 +1,343 @@
+.link-style:visited {
+    color: white;
+}
+
+.link-style:active {
+    color: var(--third);
+}
+
+/* ---------------------------------------------- Sections -------------------------------------- */
+
+.sections {
+    background: #e3e6e6;
+}
+
+.sections-ch {
+    margin: auto;
+}
+
+/* ---------------------------------------------- Sections -------------------------------------- */
+
+/*---------------------------------------------- Hero Section ----------------------------------------------*/
+
+.hero-wrapper {
+    position: relative;
+}
+
+.hero {
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.img-box {
+    display: inline-flex;
+    position: relative;
+    animation: imgSlider 25s ease-in-out alternate infinite;
+}
+
+.img-box img {
+    width: 100vw;
+}
+
+.hero-grad {
+    width: 110%;
+    position: absolute;
+}
+
+@keyframes imgSlider {
+    
+    1%{
+    right:calc(0vw);
+    }
+    10%{
+    right:calc(0vw);
+    }
+    
+    12%{
+    right:calc(100*1vw);
+    }
+    30%{
+    right:calc(100*1vw);
+    }
+    
+    32%{
+    right:calc(100*2vw);
+    }
+    50%{
+    right:calc(100*2vw);
+    }
+    
+    52%{
+    right:calc(100*3vw);
+    }
+    70%{
+    right:calc(100*3vw);
+    }
+    
+    72%{
+    right:calc(100*4vw);
+    }
+    90%{
+    right:calc(100*4vw);
+    }
+    
+    92%{
+    right:calc(100*5vw);
+    }
+    100%{
+    right:calc(100*5vw);
+    }
+    
+}
+
+.hero-space {
+    height: 35vh;
+}
+
+/*---------------------------------------------- Hero Section ----------------------------------------------*/
+
+/* ----------------------------------------------- section-small ------------------------------------------------- */
+
+.section-small {
+    display: none;
+}
+
+/* Card-Small */
+.card-small {
+    background: white;
+/*     width: 37vh; */
+    font-size: 1.6vh;
+    margin: 0 0.4vh;
+    border-radius: .8vh;
+}
+
+.card-small h3 {
+    margin: .5vh .7vh;
+    color: black;
+    height: 4.5vh;
+}
+
+.card-small-img {
+    height: 14vh;
+}
+/* Card-Small */
+
+/* ----------------------------------------------- section-small ------------------------------------------------- */
+
+/* ----------------------------------------------- section-4cards + section-single ------------------------------------------------- */
+
+/* Add all sections that have card-1st OR card/2nd */
+.section-4cards, .section-single {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 98vw;
+}
+
+/* ----------------------------------------------- section-4cards + section-single ------------------------------------------------- */
+
+/* ----------------------------------------------- section-4cards ------------------------------------------------- */
+
+/* card-1st + card-2nd */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    border-radius: 1vw;
+    font-size: 2.1vh;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 40%);
+    width: 42vh;
+/*     height: 46vh; */
+    padding: .2vh;
+    margin: 1.5vh;
+}
+
+.card-inner {
+    /* width: 35vh; */
+}
+
+.card-main-ch {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.card-lower {
+	margin-top: 1vh;
+}
+
+.card-Upper-ch.card-1 > a > div :hover {
+    scale: 0.98;
+}
+
+.card-head {
+    margin: 2vh 1vh 1.5vh;
+}
+.card-main {
+padding: 0 1vh;
+}
+.card-foot {
+    margin: 2vh 1vh;
+}
+
+/* card-1st + card-2nd */
+
+.card-1-img {
+    width: 100%;
+    height: 13vh;
+    border-radius: .5vh;
+}
+
+/* ----------------------------------------------- section-4cards ------------------------------------------------- */
+
+/* ----------------------------------------------- section-single ------------------------------------------------- */
+
+.card-2-img {
+    height: 30vh;
+    width: 100%;
+/*     border-radius: 1vh; */
+}
+
+/* ----------------------------------------------- section-single ------------------------------------------------- */
+
+/* ----------------------------------------------- section-scroll + section-hotoffers ------------------------------------------------- */
+
+.section-scroll, .section-hotoffers {
+    background: white;
+    position: relative; 
+    width: 96vw;
+    margin: 2vh auto;
+    font-size: 2vh;
+    padding: 0 1vh;
+}
+
+.section-hotoffers .btnLeft, .section-hotoffers .btnRight {
+	top: 14vh;
+}
+
+/* ----------------------------------------------- section-scroll + section-hotoffers ------------------------------------------------- */
+
+/* ----------------------------------------------- section-scroll ------------------------------------------------- */
+
+.card-scroll-1st-head {
+    padding: 2vh 1vh 0;
+    background: white;
+    font-size: 140%;
+}
+
+
+/* card-scroll-1st + card-scroll-2nd */
+
+.card-scroll-1st-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 2vh 0;
+}
+
+.card-scroll-1st {
+    display: flex;
+    gap: 1vh;
+}
+
+.btnLeft, .btnRight {
+    background: white;
+    position: absolute;
+    width: 8vh;
+    height: 13vh;
+    top: 12vh;
+    border: none;
+    cursor: pointer;
+    font-size: 350%;
+    color: black;
+    transition: .2s;
+    z-index: 1;
+}
+
+.btnLeft {
+    left: 3vh;
+    border-radius: 1vh;
+}
+.btnRight {
+    right: 3vh;
+    border-radius: 1vh;
+}
+.btnLeft:hover {
+    box-shadow: .1vh .1vh 1vh rgba(0, 0, 0, 0.8);
+}
+.btnRight:hover {
+    box-shadow: -.1vh .1vh 1vh rgba(0, 0, 0, 0.8);
+}
+
+.card-scroll-1st-img {
+    height: 23vh;
+}
+.card-scroll-1st-img:hover {
+	scale: .98;
+}
+
+/* ----------------------------------------------- section-scroll ------------------------------------------------- */
+
+/* ----------------------------------------------- section-hotoffers ------------------------------------------------- */
+
+.card-scroll-2nd {
+    margin-top: 2vh;
+}
+.card-scroll-2nd-imgdiv {
+    width: 18vw;
+/*     background: #ac0000; */
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+.card-scroll-2nd-img {
+    height: 23vh;
+}
+
+.card-scroll-2nd-foot {
+    font-size: 80%;
+}
+
+.card-scroll-2nd-foot .desc1 {
+    display: block;
+    text-decoration: auto;
+    color: black;
+}
+.how-much-off {
+    background: #df0033;
+    color: white;
+    padding: 1vh;
+    display: inline-block;
+    border-radius: .5vh;
+    margin-right: .3vh;
+}
+.desc1 .deal {
+    color: #df0033;
+}
+
+.card-scroll-2nd-foot .desc2 {
+    display: block;
+    text-decoration: auto;
+    color: black;
+}
+.desc2 .price {
+    font-size: 130%;
+}
+.desc2 .list-price {
+    color: #54595a;
+}
+.desc2 .list-price-line {
+    text-decoration: line-through;
+}
+
+.card-scroll-2nd-foot .desc3 {
+    display: block;
+    text-decoration: auto;
+    color: black;
+}
+
+/* ----------------------------------------------- section-hotoffers ------------------------------------------------- */
+
